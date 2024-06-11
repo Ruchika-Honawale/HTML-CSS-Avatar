@@ -1,0 +1,46 @@
+:root{
+    --green: green;
+    --orange :orange;
+    --white :white;
+    
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--white);
+        font-family: 'Inter',sans-serif;
+    height: 100vh;
+    }
+    .avatar {
+        display: flex;
+    transition: all0.2s ease-in-out;
+    transform: translate(3rem,0);
+    margin-left: 3rem;
+      }
+      
+    .avatar img{
+        width: 8rem;
+        height: 8rem;
+        object-fit: cover;
+        border: radius 50%;
+        overflow: hidden;
+        cursor: pointer;
+        border: 8px solid var(--green);
+        transition: all0.2s ease-in-out;
+    }
+    .avatar img:nth-child(2){
+        transform: translate(-6.25rem,0);
+    }
+    .avatar img:nth-child(3){
+        transform: translate(-12.5rem,0);
+    }
+    .avatar img:nth-child(4){
+        transform: translate(-18.75rem,0);
+    }
+    .avatar img:hover:not(:nth-last-child(1)){
+        margin-right: 110px;
+    }
+    .avatar img:hover{
+        border: 8px solid var(--orange);
+    }
